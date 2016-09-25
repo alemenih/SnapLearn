@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Choose a category to continue"
+            android:id="@+id/textView5"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/categorySpinner"
+            android:layout_alignEnd="@+id/categorySpinner" />
+
+        <Spinner
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/categorySpinner"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/wordListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
